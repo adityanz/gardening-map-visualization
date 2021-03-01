@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gardening Map</title>
+
+    <!-- Load Bulma from CDN (consider saving it to repository instead) -->
+    <!-- https://bulma.io/ -->
+    <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/journal/bulmaswatch.min.css">
+
+    <!-- Load Font Awesome 5 (free) icons -->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+
+  <body>
+
+  <div id="navigation">
+  </div>
+  <script>
+  $(function(){
+    $("#navigation").load("navbar.html");
+  });
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <!-- Begin page content -->
+      <div class="content">
+
+        <a class="button is-large is-primary" href="/chart.html">
+            <span class="icon is-medium">
+              <i class="fas fa-map"></i>
+            </span>
+            <span>Gardening Map</span>
+          </a>
+          <div> </div>
+          <p> </p>
+        <span class="heading">Acknowledgements</span>
+        <div> </div>
+
+        <p2>
+          <a href="https://vizhub.com/sjengle/ddee531e7a414d97a059d751507e0f41"> Map Chart of SF Arrests: By Sophie Engle</a><br/>
+          <!-- <a href="https://bl.ocks.org/d3noob/e549dc220052ac8214b9db6ce47d2a61">Map Pan and Zoom: By D3Noob </a><br/> -->
+          <!-- <a href="https://observablehq.com/@d3/zoom-svg-rescaled?collection=@d3/d3-zoom">Zoom: By Mike Bostock </a><br/> -->
+          <!-- <a href="http://bl.ocks.org/feyderm/e6cab5931755897c2eb377ccbf9fdf18">Interactive Drop Down Selection: By Michael Feyder </a><br/> -->
+          <a href="https://www.d3-graph-gallery.com/graph/custom_legend.html">Lengend Idea</a><br/>
+          <a href="https://foodlocator.sfmfoodbank.org/en/sf/94118/calfresh">Food Bank Source</a><br/>
+          <a href="https://sfrecpark.org/Facilities?clear=True">Community Gardens Source</a><br/>
+          <a href="https://docs.google.com/spreadsheets/d/10PkMBZNUyT0J51M72A0KVQw4ThFoX912mWMVOxLTHpk/edit?usp=sharing">Raw Data</a><br/>
+
+        </p2>
+
+        <p class="is-6">
+          <em>I used all those sources in order to better understand and implement my visualizations in D3 and organize my data.</em>
+        </p>
+
+
+      </div>
+      <!-- End page content -->
+    </div>
+  </section>
+
+
+    <div id="footer">
+    </div>
+    <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+    </script>
+
+
+
+</html>
